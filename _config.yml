@@ -1,0 +1,124 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+########## custom start
+
+# site icon
+favicon: /assets/images/favicon.ico
+
+avatar: /assets/blogImg/avatar.jpg
+email: 75097980@qq.com
+keywords: "ios,oc,swift,android,node.js,程序猿"
+
+# site begin time © 2015 - 2016
+since: 2015
+
+# duoshuo
+duoshuo_shortname: reefish
+
+# baidu analytics id
+baidu_analytics: fd7acb04d3f6bbb4ed94396f0ba6f1ff
+
+# swiftype search API Key
+#swiftype_key:
+
+
+# Social links
+social:
+  GitHub: https://github.com/reefish
+  Weibo: http://weibo.com/u/5863059692
+  # Others:
+
+# friend links tile (chinese available)
+links_title: 友情链接：
+# friend links
+links:
+  ReeFish: http://reefish.org/
+
+
+# backup
+backup:
+  type: git
+  theme: yilia
+  message: 'updated: {{ now("YYYY-MM-DD HH:mm:ss") }}'
+  repository:
+    github: reefish:ReeFish/reefish-blog-backup.git,master
+
+########## custom end
+
+
+# Site
+title: ReeFish
+subtitle: 奇峰遮远目，稀鱼跃龙湫
+description: 在美丽的西湖旁与ios同行
+author: ReeFish
+language: zh-Hans
+timezone:
+
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://reefish.com
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 8
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+#theme: landscape
+#theme: yilia
+theme: ariel
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  message: update
+  repo:
+    s1: ~/temp/blog,master
+
