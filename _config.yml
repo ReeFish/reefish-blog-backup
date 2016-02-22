@@ -40,7 +40,7 @@ links:
 # backup
 backup:
   type: git
-  theme: yilia
+  theme: ariel
   message: 'updated: {{ now("YYYY-MM-DD HH:mm:ss") }}'
   repository:
     github: reefish:ReeFish/reefish-blog-backup.git,master
@@ -120,5 +120,5 @@ deploy:
   type: git
   message: update
   repo:
-    s1: ~/temp/blog,master
-
+    #s1: ~/temp/blog,master
+    s1: git.cube.com:reefish-blog.git,master
