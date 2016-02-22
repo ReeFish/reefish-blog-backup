@@ -4,6 +4,8 @@ date: 2016-02-15 17:50:07
 tags: hexo
 ---
 
+#hexo 部署
+
 ## hexo源码备份
 
 1）安装hexo备份插件
